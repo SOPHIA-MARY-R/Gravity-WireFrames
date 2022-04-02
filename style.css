@@ -8,3 +8,24 @@
 .object-cover{
     cursor: pointer;
 }
+.form-control,.form-label,.form-select{
+    margin : auto;
+    padding-top: 12px;
+    border-radius: 10px;
+    align-items: center;
+    width: 90%;
+}
+.form-label{
+    margin-bottom: 10px;
+}
+.btn-block{
+    background-color: lightgray;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.btn-block:hover{
+    border: 2px solid rgb(187,107,107);
+    background-color: rgb(187, 107, 107);
+}
