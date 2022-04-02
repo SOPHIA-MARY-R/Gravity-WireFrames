@@ -5,3 +5,6 @@
     background-color: lightgrey;
     color: black;
 }
+.object-cover{
+    cursor: pointer;
+}
