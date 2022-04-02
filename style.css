@@ -1,0 +1,7 @@
+.card{
+    margin: 20px;
+}
+.navbar, .footer{
+    background-color: lightgrey;
+    color: black;
+}
