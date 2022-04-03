@@ -239,34 +239,59 @@
             <div class="row row-cards">
               <div class="col-lg-12">
                 <form action="https://httpbin.org/post" method="post" class="card align-items-center">
+                  <div class="container">
                   <div class="card-header">
-                    <h4 class="card-title">Project Details</h4>
+                    <h4 class="card-title" style="text-align: center;">Project Details</h4>
                   </div>
                   <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-12 mb-3">
-                              <label class="form-label">Project Title</label>
-                              <input type="text" class="form-control" name="example-text-input" placeholder="Enter your project title" required>
+                            <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Enter your project title" required>
+                              <label for="floatingInput" style="margin-left: 50px; font-weight: 500;">Project Title</label>
                             </div>
-                            <div class="mb-3">
-                              <label class="form-label">Description <span class="form-label-description">56/100</span></label>
+                            <div class="form-floating mb-3">
                               <textarea class="form-control" name="example-textarea-input" rows="6" placeholder="Enter your project description" required></textarea>
+                              <label class="form-label" style="margin-left: 50px;">Description <span class="form-label-description" style="margin-right: 50px;">56/100</span></label>
                             </div>
                             <div class="mb-3">
-                              <div class="form-label">Domain</div>
+                              <label for="exampleDataList" class="form-label">Domains</label>
+                              <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." required>
+                              <datalist id="datalistOptions">
+                                <option value="Web Development">
+                                <option value="Cloud Computing">
+                                <option value="Machine Learning">
+                                <option value="Blockchain">
+                                <option value="Cyber Security">
+                                <option value="Data Analytics"></option>
+                              </datalist>
+                            </div>
+                            <div class="mb-3">
+                              <div class="form-label">Status of Project</div>
                               <select class="form-select" required>
-                                <option value="1">Web Development</option>
-                                <option value="2">Machine Learning</option>
-                                <option value="3">Artificial Intelligence</option>
-                                <option value="4">Cyber Security</option>
-                                <option value="5">Cloud Computing</option>
+                                <option value="1">Nascent</option>
+                                <option value="2">On Progress</option>
+                                <option value="3">Accomplished</option>
                               </select>
                             </div>
+
+                            <div class="mb-3">
+                              <div class="form-label">Project Access</div>
+                                <label class="form-label">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"><a href="#" data-bs-toggle="tooltip" data-bs-placement="left"  title="Anyone on the internet with this link can view the project. You decide who can commit on the project." style="text-decoration: none; color: black;">Public</a>
+                                </label>
+                                <label class="form-label">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"><a href="#" data-bs-toggle="tooltip" data-bs-placement="left"  title="You decide who can view and commit to the project" style="text-decoration: none; color: black;">Private</a>
+                                </label>
+                              </div>
+                             
+                             </div>
                             <div class="mb-3">
                                 <div class="form-label">Upload your abstract</div>
                                 <input type="file" class="form-control" required/>
                               </div>
-                            <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Add Project</button>
+                            </div>
+                            </div>
                             </div>
                             </div>
                             </div>

@@ -19,13 +19,30 @@
     margin-bottom: 10px;
 }
 .btn-block{
-    background-color: lightgray;
-    margin: auto;
+    background-color: #527572FF;
+    opacity: 0.4;
+    margin-left: 100px;
     margin-top: 20px;
-    margin-bottom: 20px;
     width: 80%;
 }
 .btn-block:hover{
-    border: 2px solid rgb(187,107,107);
-    background-color: rgb(187, 107, 107);
+    background-color: #527572FF;
+    border: 2px solid #527572FF;
+    opacity: 1;
+}
+.form-check-input {
+    margin-right: 10px;
+}
+.container{
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 10px 22px 10px 24px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 10px 22px 39px 24px rgba(0,0,0,0.29);
+    -moz-box-shadow: 10px 22px 39px 24px rgba(0,0,0,0.29);
+}
+.card-header{
+    font-weight: bold;
+}
+.card-title{
+    font-size: 20px;
 }
